@@ -1,66 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <!-- choose one -->
-    <script src="https://unpkg.com/feather-icons"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-    <link rel="stylesheet" href="landing.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alessio's Pizzaria</title>
+    <link rel="stylesheet" href="landing.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
 </head>
+
 <body>
+
     <header>
         <nav>
-            <ul>
+            <ul id="links">
                 <li><a href="#secao1">Home</a></li>
-                <li><a href="#secao2">Serviços</a></li>
-                <li><a href="#secao3">Sobre nós</a></li>
-                <li><a href="#secao4">Contato</a></li>
+                <li><a href="#secao2">Cardápio</a></li>
+                <li><a href="#secao3">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <section id="secao1">
-        <img src="assets/imgSection1.jpg" alt="imagem pizzaria representação" height="1000" width="2000">
-        <h1>Bem-vindo à Alessio's</h1>
-        <p>Descrição introdutória sobre o objetivo da página.</p>
+        <div id="secao1Texto">
+            <h1>Bem-vindo à Alessio's</h1>
+            <p>Saborosas pizzas feitas especialmente para você</p>
+            <a href="#secao2" id="btn">Ver Cardápio</a>
+        </div>
     </section>
 
     <section id="secao2">
-        <h2>Nossos Serviços</h2>
-
-        <div id="pizzasOpcoes">
-            <img src="assets/pizza1.webp" alt="pizza 1">
-            <img src="assets/pizza2.avif" alt="pizza 2">
-            <img src="assets/pizza3.jpg" alt="pizza 3">
-            <img src="assets/pizza4.png" alt="pizza 4">
+        <h2>Cardápio</h2>
+        <div id="pizzas">
+            <div id="pizza">
+                <img src="assets/pizza1.webp" alt="Pizza à Moda da Casa" />
+                <h3>Pizza à Moda da Casa</h3>
+                <p>Molho de tomate, mussarela, frango e molho BBQ.</p>
+            </div>
+            <div id="pizza">
+                <img src="assets/pizza2.avif" alt="Pizza à Moda do Apartamento" />
+                <h3>Pizza à Moda do Apartamento</h3>
+                <p>Molho de tomate, mussarela e bacon.</p>
+            </div>
+            <div id="pizza">
+                <img src="assets/pizza3.jpg" alt="Pizza Calatona" />
+                <h3>Pizza Calatona</h3>
+                <p>Molho de tomate, mussarela, manjericão.</p>
+            </div>
+            <div id="pizza">
+                <img src="assets/pizza4.png" alt="Pizza Cogulame" />
+                <h3>Pizza Cogulame</h3>
+                <p>Molho de tomate, pepperoni, queijo mussarela.</p>
+            </div>
+            <div id="pizza">
+                <img src="assets/pizza5.jpeg" alt="Pizza Calabresa" />
+                <h3>Pizza Calabresa</h3>
+                <p>Molho de tomate, mussarela, calabresa.</p>
+            </div>
+            <div id="pizza">
+                <img src="assets/pizza6.webp" alt="Pizza Bife Acebolado" />
+                <h3>Pizza Bife Acebolado</h3>
+                <p>Molho de tomate, mussarela, bife, cebola.</p>
+            </div>
         </div>
-        <p>Informações sobre os serviços que oferecemos.</p>
     </section>
 
     <section id="secao3">
-        <img src="assets/pizzaSobreNos.jpg" alt="pizza sobre nós">
-        <h2>Sobre Nós</h2>
-        <p>Detalhes sobre a empresa ou o projeto.</p>
+        <div>
+            <h2>Sobre Nós</h2>
+            <p>Nossa pizzaria é dedicada em criar as melhores pizzas do mundo, com ingredientes frescos e receitas exclusivas</p>
+        </div>
     </section>
 
-    <section id="secao4">
+    <section id="contato">
         <h2>Contato</h2>
-        <p>Informações de contato e formulário.</p>
+        <p>Entre em contato conosco e faça já seu pedido.</p>
+        <p><i class="fas fa-phone-alt"></i><strong> Telefone:</strong> (11) 99977-1234</p>
+        <p><i class="fas fa-map-marker-alt"></i><strong> Endereço:</strong> Rua da Maria joana, 99999 - Bairro Inexiste - Cascavel/Pr</p>
+        <p><i class="fas fa-envelope"></i><strong> Email:</strong> contato@alessios.com</p>
     </section>
 
     <footer>
-        <i data-feather="instagram"></i>
-        <i data-feather="github"></i>
-        <i data-feather="facebook"></i>
-        <p>&copy; 2025 Sua Empresa. Todos os direitos reservados.</p>
+        <p>&copy; 2025 Alessio's Pizzaria</p>
     </footer>
-    <script>
-        feather.replace();
-    </script>
+
 </body>
+
 </html>
