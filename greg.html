@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Mostrar Seção com CSS</title>
+  <style>
+    /* Esconde a seção por padrão */
+    #toggle:checked ~ .secao {
+        display: block;
+      }
+
+    .secao {
+      display: none;
+      margin-top: 10px;
+      padding: 10px;
+      background-color: #f0f0f0;
+    }
+
+    /* Oculta o checkbox visualmente */
+    #toggle {
+      display: none;
+    }
+
+    /* Estiliza o botão */
+    label {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Botão que controla o checkbox -->
+  <input type="checkbox" id="toggle">
+  <label for="toggle">Mostrar Seção</label>
+
+  <!-- Seção oculta que será exibida -->
+  <div class="secao">
+    <h2>Seção Revelada</h2>
+    <p>Essa seção aparece apenas com HTML e CSS!</p>
+  </div>
+
+</body>
+</html>
